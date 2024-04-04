@@ -281,7 +281,7 @@ ul {
   margin-bottom: 50px;
   color: rgb(160, 160, 160);
   /*.products__list::-webkit-scrollbar{
-      //display: none;
+      display: none;
   }*/
 }
 .products__scroll .products__list .product__name {
