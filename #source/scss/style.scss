@@ -182,7 +182,7 @@
 }
 
 .products__scroll {
-    max-width: 1440px; 
+    max-width: 1340px; 
     margin: auto;  
     .products__list {
         display: flex;
@@ -211,7 +211,7 @@
         .products__img {
             width: 310px;
             height: 434px;
-            background: rgb(199, 199, 199);
+            background: rgb(238, 238, 238);
         }
     } 
 }
@@ -450,6 +450,10 @@
                 button:hover {
                     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
                 }
+                button:active {
+                    transform: scale(0.99);
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                }
             }
         }
         .footer__copyright {
@@ -460,7 +464,7 @@
             font-size: 13px;
             font-weight: 400;
             line-height: 15.23px;
-            letter-spacing: 0.800000011920929px;
+            letter-spacing: 0.8px;
             text-align: right;
             gap: 40px;
         }

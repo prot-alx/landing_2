@@ -269,7 +269,7 @@ ul {
 }
 
 .products__scroll {
-  max-width: 1440px;
+  max-width: 1340px;
   margin: auto;
 }
 .products__scroll .products__list {
@@ -302,7 +302,7 @@ ul {
 .products__scroll .products__list .products__img {
   width: 310px;
   height: 434px;
-  background: rgb(199, 199, 199);
+  background: rgb(238, 238, 238);
 }
 
 .banner__4 {
@@ -592,6 +592,12 @@ ul {
   -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+.footer .footer__container .footer__main .footer__signup button:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .footer .footer__container .footer__copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -604,7 +610,7 @@ ul {
   font-size: 13px;
   font-weight: 400;
   line-height: 15.23px;
-  letter-spacing: 0.8000000119px;
+  letter-spacing: 0.8px;
   text-align: right;
   gap: 40px;
 }
