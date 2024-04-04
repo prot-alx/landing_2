@@ -1,0 +1,370 @@
+@import "nullstyle.scss";
+
+.wrapper {
+	display: grid;
+	min-height: 100vh;    
+	grid-template: minmax(76px, auto) 1fr minmax(70px, auto) / 1fr;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+}
+
+.header {
+	grid-area: header;
+	padding: 15px;
+    display: flex;
+    .header__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        .header__list {
+            min-width: 150px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .header__link {
+            font-size: 16px;  
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;            
+            line-height: 16.41px;
+            letter-spacing: 1.4px;
+            text-align: right;  
+        }
+        .cart__link {
+            min-width: 110px;
+        }
+    }
+}
+
+
+.main {
+    grid-area: main;
+}
+
+
+
+.banner__1 {
+    background-image: url("../img/header/Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    color: white;    
+    height: 504px;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    .banner__text {   
+        display: flex;
+        flex-direction: column;
+        text-align: center;    
+        justify-content: center;
+        height: 100%;
+        h2 {
+            font-size: 43px;
+            font-weight: 400;
+            line-height: 46px;
+        }
+        h3 {
+            padding: 12px 0px 28px 0px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 17.58px;
+            letter-spacing: 0.8px;
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15.23px;
+            letter-spacing: 1.4px;    
+        }
+    }
+}
+
+.banner__2 {
+    margin: 80px;
+    height: 153px;
+    .banner__text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;    
+        justify-content: center;
+        height: 100%;
+        h2 {
+            font-size: 43px;
+            font-weight: 400;
+            line-height: 58px;        
+        }
+        h3 {
+            padding: 23px 0px 26px 0px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            color: rgba(160, 160, 160, 1);
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 1.4px;
+        }
+    }
+}
+
+.banner__3{
+    .desktop__items {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        .desktop__item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;    
+            justify-content: space-between;
+            height: 575px;
+        }
+        .item__text h3 {
+            padding: 10px 0px;
+            font-size: 27px;
+            font-weight: 400;
+            line-height: 30px;
+            padding: 23px 0px;
+        }    
+        .item__text p {
+            padding: 13.5px 0px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15.23px;
+            letter-spacing: 1.4px;
+            padding: 3px 0px;   
+        }
+    }
+}
+
+.featured__products {
+    margin-top: 150px;
+    height: 230px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+        font-size: 33px;
+        font-weight: 400;
+        line-height: 36px;
+        padding-bottom: 16px;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 17.58px;
+        letter-spacing: 0.8px;
+        color: rgba(160, 160, 160, 1);
+    }
+    .small__squares {
+        display: flex;
+        gap: 16px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0px 16px 0px;
+    }
+}
+
+.products__scroll {
+    max-width: 1440px; 
+    margin: auto;  
+    .products__list {
+        display: flex;
+        overflow-x: auto;        
+        gap: 25px;
+        margin-bottom: 50px;
+        color: rgba(160, 160, 160, 1);
+        .product__name {
+            padding-top: 20px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0.7px;
+            text-align: left;
+        }
+        .product__price {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0.7px;
+            text-align: left;
+        }
+        /*.products__list::-webkit-scrollbar{
+            //display: none;
+        }*/
+        .products__img {
+            width: 310px;
+            height: 434px;
+            background: rgb(199, 199, 199);
+        }
+    } 
+}
+
+.banner__4 {
+    background-image: url("../img/home_office_inspiration.png");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    color: white;    
+    height: 504px;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 120px 0px;
+    h2 {
+        font-size: 66px;
+        font-weight: 400;
+        line-height: 70px;
+    }
+    h3 {
+        padding: 14px 0px 30px 0px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        letter-spacing: 0.8px;
+    }
+    p {        
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.23px;
+        letter-spacing: 1.4px;
+    }
+}
+
+
+
+.banner__5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    .banner5__description {
+        max-width: 777px; 
+        margin: auto; 
+        padding: 23px 0px;
+    }
+    h2 {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    p{            
+        color: rgba(160, 160, 160, 1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.8px;
+    }
+}
+
+
+
+.team {
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    margin: 42px 0px 120px 0px;
+    .team__intro{ 
+        h2 {
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 36px;            
+        }
+        .team__text {
+            margin: 23px 0px 80px 0px;
+        }
+        p {
+            max-width: 789px;
+            color:rgba(160, 160, 160, 1);            
+            margin: auto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.8px;            
+        }
+    }   
+    .team__items {
+        max-width: 1365px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 25px;                 
+        .team__item {
+            max-height: 273px;
+            max-width: 204px;
+        }
+    }
+    .team__outro {
+        h2 {
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 36px;            
+        }
+        .outro__title {
+            margin: 96px 0px 44px 0px;
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 1.4px;
+        }
+    }
+}
+
+
+
+.banner__6 {
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 1340px;
+    height: 404px;
+    color: #ffffff; 
+    background-color: rgb(154, 168, 177, 1);
+    h2 {
+        font-size: 43px;
+        font-weight: 400;
+        line-height: 58px;
+        margin: 23px 0px 24px 0px;
+    }
+    p {  
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.8px;
+    }
+}
+
+
+
+
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: rgba(249, 249, 249, 1);
+}
