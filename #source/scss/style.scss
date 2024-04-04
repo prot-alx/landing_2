@@ -361,10 +361,108 @@
 
 
 
-
-
-
 .footer {
+    margin-top: 40px;
     grid-area: footer;
     background-color: rgba(249, 249, 249, 1);
+    .footer__container {
+        max-width: 1340px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;        
+        .footer__logo {
+            display: flex;
+            justify-content: flex-end;
+            .footer__goup {  
+                display: flex;       
+                width: 82px;
+                height: 82px;
+                background: black;
+                color: #ffffff;
+                align-items: center;            
+                flex-direction: column;
+                justify-content: center;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.8px;
+                text-align: center;            
+            }
+        }
+        .footer__main {
+            display: flex;
+            height: 265px;
+            .footer__menu {                
+                align-items: center;
+                width: 170px;                
+                .footer__list {     
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;  
+                    justify-content: space-around;                         
+                    font-size: 22px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                } 
+            }
+            .footer__signup {
+                max-width: 500px;
+                padding-left: 12.5px;
+                h3 {
+                    font-size: 22px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                }
+                p {                    
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16.41px;
+                    letter-spacing: 0.8px;
+                    text-align: left;
+                    color: rgba(160, 160, 160, 1);
+                }
+                .signup__description {
+                    max-width: 350px;
+                    margin: 23px 0px 50px 0px ;
+                }
+                .signup__input {
+                    max-width: 320px;
+                    max-height: 41px;
+                    border-bottom: 2px solid black;
+                    input {
+                        font-size: 18px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    input:focus {
+                        outline: none;
+                    }
+                }
+                button {
+                    margin-top: 20px;
+                    width: 75px;
+                    height: 40px;
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                }
+                button:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+                }
+            }
+        }
+        .footer__copyright {
+            display: flex;
+            height: 23px;
+            margin: 80px 0px 20px 0px;
+            justify-content: flex-end;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15.23px;
+            letter-spacing: 0.800000011920929px;
+            text-align: right;
+            gap: 40px;
+        }
+    }
 }

@@ -468,6 +468,143 @@ ul {
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
+  margin-top: 40px;
   grid-area: footer;
   background-color: rgb(249, 249, 249);
+}
+.footer .footer__container {
+  max-width: 1340px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footer__container .footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.footer .footer__container .footer__logo .footer__goup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 82px;
+  height: 82px;
+  background: black;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+.footer .footer__container .footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 265px;
+}
+.footer .footer__container .footer__main .footer__menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+}
+.footer .footer__container .footer__main .footer__menu .footer__list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.footer .footer__container .footer__main .footer__signup {
+  max-width: 500px;
+  padding-left: 12.5px;
+}
+.footer .footer__container .footer__main .footer__signup h3 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.footer .footer__container .footer__main .footer__signup p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: rgb(160, 160, 160);
+}
+.footer .footer__container .footer__main .footer__signup .signup__description {
+  max-width: 350px;
+  margin: 23px 0px 50px 0px;
+}
+.footer .footer__container .footer__main .footer__signup .signup__input {
+  max-width: 320px;
+  max-height: 41px;
+  border-bottom: 2px solid black;
+}
+.footer .footer__container .footer__main .footer__signup .signup__input input {
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+}
+.footer .footer__container .footer__main .footer__signup .signup__input input:focus {
+  outline: none;
+}
+.footer .footer__container .footer__main .footer__signup button {
+  margin-top: 20px;
+  width: 75px;
+  height: 40px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer .footer__container .footer__main .footer__signup button:hover {
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.footer .footer__container .footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 23px;
+  margin: 80px 0px 20px 0px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.23px;
+  letter-spacing: 0.8000000119px;
+  text-align: right;
+  gap: 40px;
 }
