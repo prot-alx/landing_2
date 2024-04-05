@@ -1,5 +1,7 @@
 @import "nullstyle.scss";
 
+$site-gray-color: rgba(160, 160, 160, 1);
+
 .wrapper {
 	display: grid;
 	min-height: 100vh;    
@@ -11,31 +13,27 @@
 }
 
 .header {
-	grid-area: header;
-	padding: 15px;
+	grid-area: header;	
     display: flex;
-    .header__menu {
+    padding: 15px;
+    .header__menu {        
         display: flex;
         align-items: center;
         justify-content: space-between;
-        text-align: center;
-        width: 100%;
-        .header__list {
-            min-width: 150px;
-            font-weight: 400;
+        width: 100%;        
+        .header__list {                        
             display: flex;
             align-items: center;
             justify-content: space-around;
+            min-width: 150px;
         }
-        .header__link {
-            font-size: 16px;  
+        .header__link {             
             text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 400;
+            text-decoration: none; 
+            text-align: right;           
             font-size: 14px;            
             line-height: 16.41px;
-            letter-spacing: 1.4px;
-            text-align: right;  
+            letter-spacing: 1.4px;              
         }
         .cart__link {
             min-width: 110px;
@@ -53,15 +51,15 @@
 .banner__1 {
     background-image: url("../img/header/Rectangle.png");
     background-repeat: no-repeat;
-    background-size: cover;    
-    color: white;    
-    height: 504px;
-    display: flex;
-    margin: auto;
-    width: 100%;
+    background-size: cover;
+    display: flex;  
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin: auto;  
+    color: white;    
+    height: 504px;    
+    width: 100%;    
     .banner__text {   
         display: flex;
         flex-direction: column;
@@ -109,7 +107,7 @@
             font-weight: 400;
             line-height: 24px;
             letter-spacing: 0.8px;
-            color: rgba(160, 160, 160, 1);
+            color: $site-gray-color;
         }
         p {
             font-size: 13px;
@@ -132,15 +130,13 @@
             justify-content: space-between;
             height: 575px;
         }
-        .item__text h3 {
-            padding: 10px 0px;
+        .item__text h3 {            
             font-size: 27px;
             font-weight: 400;
             line-height: 30px;
             padding: 23px 0px;
         }    
-        .item__text p {
-            padding: 13.5px 0px;
+        .item__text p {            
             font-size: 13px;
             font-weight: 400;
             line-height: 15.23px;
@@ -150,14 +146,14 @@
     }
 }
 
-.featured__products {
-    margin-top: 150px;
-    height: 230px;
+.featured__products {    
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 150px;
+    height: 230px;
     h2 {
         font-size: 33px;
         font-weight: 400;
@@ -169,14 +165,14 @@
         font-weight: 400;
         line-height: 17.58px;
         letter-spacing: 0.8px;
-        color: rgba(160, 160, 160, 1);
+        color: $site-gray-color;
     }
     .small__squares {
-        display: flex;
-        gap: 16px;
+        display: flex;        
         text-align: center;
         align-items: center;
         justify-content: center;
+        gap: 16px;
         margin: 40px 0px 16px 0px;
     }
 }
@@ -189,21 +185,21 @@
         overflow-x: auto;        
         gap: 25px;
         margin-bottom: 50px;
-        color: rgba(160, 160, 160, 1);
+        color: $site-gray-color;
         .product__name {
+            text-align: left;
             padding-top: 20px;
             font-size: 13px;
             font-weight: 400;
             line-height: 21px;
-            letter-spacing: 0.7px;
-            text-align: left;
+            letter-spacing: 0.7px;            
         }
         .product__price {
+            text-align: left;
             font-size: 12px;
             font-weight: 400;
             line-height: 21px;
-            letter-spacing: 0.7px;
-            text-align: left;
+            letter-spacing: 0.7px;            
         }
         /*.products__list::-webkit-scrollbar{
             display: none;
@@ -219,15 +215,14 @@
 .banner__4 {
     background-image: url("../img/home_office_inspiration.png");
     background-repeat: no-repeat;
-    background-size: cover;    
-    color: white;    
-    height: 504px;
-    display: flex;
-    margin: auto;
-    width: 100%;
+    background-size: cover;  
+    display: flex; 
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: center;  
+    color: white;    
+    height: 504px;      
+    width: 100%;   
     margin: 120px 0px;
     h2 {
         font-size: 66px;
@@ -268,7 +263,7 @@
         line-height: 36px;
     }
     p{            
-        color: rgba(160, 160, 160, 1);
+        color: $site-gray-color;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
@@ -278,8 +273,7 @@
 
 
 
-.team {
-    text-align: center;
+.team {    
     align-items: center;
     text-align: center;
     margin: 42px 0px 120px 0px;
@@ -293,9 +287,9 @@
             margin: 23px 0px 80px 0px;
         }
         p {
-            max-width: 789px;
-            color:rgba(160, 160, 160, 1);            
             margin: auto;
+            max-width: 789px;
+            color:$site-gray-color;
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
@@ -303,11 +297,11 @@
         }
     }   
     .team__items {
-        max-width: 1365px;
         display: grid;
         margin: auto;
-        grid-template-columns: repeat(6, 1fr); 
-        gap: 25px;                 
+        grid-template-columns: repeat(6, 1fr);
+        gap: 25px;
+        max-width: 1365px;
         .team__item {
             max-height: 273px;
             max-width: 204px;
@@ -362,32 +356,32 @@
 
 
 .footer {
-    margin-top: 40px;
     grid-area: footer;
+    margin-top: 40px;    
     background-color: rgba(249, 249, 249, 1);
     .footer__container {
-        max-width: 1340px;
         margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;        
+        justify-content: space-between; 
+        max-width: 1340px;              
         .footer__logo {
             display: flex;
             justify-content: flex-end;
             .footer__goup {  
-                display: flex;       
+                display: flex; 
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center;
+                text-align: center;
                 width: 82px;
                 height: 82px;
                 background: black;
                 color: #ffffff;
-                align-items: center;            
-                flex-direction: column;
-                justify-content: center;
                 font-size: 15px;
                 font-weight: 400;
                 line-height: 16px;
                 letter-spacing: 0.8px;
-                text-align: center;            
             }
         }
         .footer__main {
@@ -400,11 +394,11 @@
                     height: 100%;
                     display: flex;
                     flex-direction: column;  
-                    justify-content: space-around;                         
+                    justify-content: space-around;
+                    text-align: left;                         
                     font-size: 22px;
                     font-weight: 400;
-                    line-height: 24px;
-                    text-align: left;
+                    line-height: 24px;                    
                 } 
             }
             .footer__signup {
@@ -422,7 +416,7 @@
                     line-height: 16.41px;
                     letter-spacing: 0.8px;
                     text-align: left;
-                    color: rgba(160, 160, 160, 1);
+                    color: $site-gray-color;
                 }
                 .signup__description {
                     max-width: 350px;
@@ -458,15 +452,15 @@
         }
         .footer__copyright {
             display: flex;
+            justify-content: flex-end;
+            text-align: right;
             height: 23px;
             margin: 80px 0px 20px 0px;
-            justify-content: flex-end;
+            gap: 40px;            
             font-size: 13px;
             font-weight: 400;
             line-height: 15.23px;
             letter-spacing: 0.8px;
-            text-align: right;
-            gap: 40px;
         }
     }
 }

@@ -43,10 +43,10 @@ ul {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
-  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 15px;
 }
 .header .header__menu {
   display: -webkit-box;
@@ -58,12 +58,9 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
   width: 100%;
 }
 .header .header__menu .header__list {
-  min-width: 150px;
-  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,16 +69,15 @@ ul {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  min-width: 150px;
 }
 .header .header__menu .header__link {
-  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 400;
+  text-align: right;
   font-size: 14px;
   line-height: 16.41px;
   letter-spacing: 1.4px;
-  text-align: right;
 }
 .header .header__menu .cart__link {
   min-width: 110px;
@@ -97,13 +93,9 @@ ul {
   background-image: url("../img/header/Rectangle.png");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  height: 504px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -111,6 +103,10 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: auto;
+  color: white;
+  height: 504px;
+  width: 100%;
 }
 .banner__1 .banner__text {
   display: -webkit-box;
@@ -207,14 +203,12 @@ ul {
   height: 575px;
 }
 .banner__3 .desktop__items .item__text h3 {
-  padding: 10px 0px;
   font-size: 27px;
   font-weight: 400;
   line-height: 30px;
   padding: 23px 0px;
 }
 .banner__3 .desktop__items .item__text p {
-  padding: 13.5px 0px;
   font-size: 13px;
   font-weight: 400;
   line-height: 15.23px;
@@ -223,8 +217,6 @@ ul {
 }
 
 .featured__products {
-  margin-top: 150px;
-  height: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,6 +231,8 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 150px;
+  height: 230px;
 }
 .featured__products h2 {
   font-size: 33px;
@@ -257,7 +251,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -265,6 +258,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 16px;
   margin: 40px 0px 16px 0px;
 }
 
@@ -285,19 +279,19 @@ ul {
   }*/
 }
 .products__scroll .products__list .product__name {
+  text-align: left;
   padding-top: 20px;
   font-size: 13px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0.7px;
-  text-align: left;
 }
 .products__scroll .products__list .product__price {
+  text-align: left;
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0.7px;
-  text-align: left;
 }
 .products__scroll .products__list .products__img {
   width: 310px;
@@ -309,13 +303,9 @@ ul {
   background-image: url("../img/home_office_inspiration.png");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  height: 504px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
-  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -323,6 +313,9 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: white;
+  height: 504px;
+  width: 100%;
   margin: 120px 0px;
 }
 .banner__4 h2 {
@@ -379,7 +372,6 @@ ul {
 }
 
 .team {
-  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -395,22 +387,22 @@ ul {
   margin: 23px 0px 80px 0px;
 }
 .team .team__intro p {
+  margin: auto;
   max-width: 789px;
   color: rgb(160, 160, 160);
-  margin: auto;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.8px;
 }
 .team .team__items {
-  max-width: 1365px;
   display: -ms-grid;
   display: grid;
   margin: auto;
   -ms-grid-columns: 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr;
   grid-template-columns: repeat(6, 1fr);
   gap: 25px;
+  max-width: 1365px;
 }
 .team .team__items .team__item {
   max-height: 273px;
@@ -468,12 +460,11 @@ ul {
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  margin-top: 40px;
   grid-area: footer;
+  margin-top: 40px;
   background-color: rgb(249, 249, 249);
 }
 .footer .footer__container {
-  max-width: 1340px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,6 +476,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 1340px;
 }
 .footer .footer__container .footer__logo {
   display: -webkit-box;
@@ -498,13 +490,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 82px;
-  height: 82px;
-  background: black;
-  color: #ffffff;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -512,11 +497,18 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 82px;
+  height: 82px;
+  background: black;
+  color: #ffffff;
   font-size: 15px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.8px;
-  text-align: center;
 }
 .footer .footer__container .footer__main {
   display: -webkit-box;
@@ -541,10 +533,10 @@ ul {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-align: left;
   font-size: 22px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
 }
 .footer .footer__container .footer__main .footer__signup {
   max-width: 500px;
@@ -602,15 +594,15 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 23px;
-  margin: 80px 0px 20px 0px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  text-align: right;
+  height: 23px;
+  margin: 80px 0px 20px 0px;
+  gap: 40px;
   font-size: 13px;
   font-weight: 400;
   line-height: 15.23px;
   letter-spacing: 0.8px;
-  text-align: right;
-  gap: 40px;
 }
