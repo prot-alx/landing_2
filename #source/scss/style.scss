@@ -439,13 +439,14 @@ $site-gray-color: rgba(160, 160, 160, 1);
                     margin-top: 20px;
                     width: 75px;
                     height: 40px;
+                    border-radius: 55px;
                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
                 }
                 button:hover {
                     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
                 }
                 button:active {
-                    transform: scale(0.99);
+                    transform: scale(0.99);                    
                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
                 }
             }
