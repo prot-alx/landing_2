@@ -3,10 +3,7 @@
 $site-gray-color: rgba(160, 160, 160, 1);
 
 .wrapper {
-	//display: flex;
-    //flex-direction: column;
-    //align-items: center;
-    //max-width: 100%;
+
 }
 
 .main {
@@ -15,10 +12,14 @@ $site-gray-color: rgba(160, 160, 160, 1);
     align-items: center;
     justify-content: space-around;
 }
+
 .header {
+    margin: auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 15px;
-    width: 100%; 
+    width: calc(100vw - 50px);    
     .header__menu {        
         display: flex;
         align-items: center;
@@ -27,8 +28,9 @@ $site-gray-color: rgba(160, 160, 160, 1);
         .header__list {                        
             display: flex;
             align-items: center;
+            gap: 20px;
             justify-content: space-around;
-            min-width: 150px;
+            max-width: 150px;
         }
         .header__link {             
             text-transform: uppercase;
@@ -49,16 +51,14 @@ $site-gray-color: rgba(160, 160, 160, 1);
 
 @media (max-width: 768px) {
     .header__link, .header__list {
-        display: none;
+        display: none;        
     }
     .header__menu {
-
         align-items: start;
         .header__logo {
             
         }
     }
-
 }
 
 .banner__1 {
@@ -72,7 +72,7 @@ $site-gray-color: rgba(160, 160, 160, 1);
     margin: auto;  
     color: white;    
     height: 504px;    
-    width: 100%;    
+    width: calc(100vw - 50px);    
     .banner__text {   
         display: flex;
         flex-direction: column;
@@ -140,7 +140,11 @@ $site-gray-color: rgba(160, 160, 160, 1);
             display: flex;
             flex-direction: column;
             text-align: center;    
-            justify-content: space-between;            
+            justify-content: space-between; 
+            img {
+                max-width: 100%;
+                display: block;
+            }           
         }
         .item__text h3 {            
             font-size: 27px;
@@ -155,9 +159,7 @@ $site-gray-color: rgba(160, 160, 160, 1);
             letter-spacing: 1.4px;
             padding: 3px 0px;   
         }     
-        img {
-            max-width: 100%;
-        }
+
     }
 }
 @media (max-width: 1024px) {
@@ -208,9 +210,17 @@ $site-gray-color: rgba(160, 160, 160, 1);
         justify-content: center;
         gap: 16px;
         margin: 40px 0px 16px 0px;
+        & > img {
+            display: block;
+        }
     }
 }
-
+@media (max-width: 1024px) {
+    .featured__products {
+        margin-top: 40px;
+        height: 150px;
+    }
+}
 .products__scroll {
     max-width: 1340px; 
     margin: auto;  
@@ -270,7 +280,7 @@ $site-gray-color: rgba(160, 160, 160, 1);
     justify-content: center;  
     color: white;    
     height: 504px;      
-    width: 100%;   
+    width: calc(100vw - 50px);  
     margin: 120px 0px;
     h2 {
         font-size: 66px;
@@ -291,7 +301,12 @@ $site-gray-color: rgba(160, 160, 160, 1);
         letter-spacing: 1.4px;
     }
 }
-
+@media (max-width: 1024px) {
+    .banner__4 {
+        margin: 40px 0px;
+        height: 400px;
+    }
+}
 
 
 .banner__5 {
@@ -304,7 +319,7 @@ $site-gray-color: rgba(160, 160, 160, 1);
         .banner5__description {
             max-width: 777px; 
             margin: auto; 
-            padding: 23px 0px;
+            padding: 23px 15px;
         }
         h2 {
             font-size: 34px;
@@ -318,11 +333,10 @@ $site-gray-color: rgba(160, 160, 160, 1);
             line-height: 24px;
             letter-spacing: 0.8px;
         }
-        .banner5__img {
+        img {
             padding: 0px 20px;
-            img {
-                max-width: 100%;
-            }
+            display: block;
+            width: 100%;
         }
     }
 }
@@ -334,17 +348,18 @@ $site-gray-color: rgba(160, 160, 160, 1);
     text-align: center;
     margin: 42px 20px 120px 20px;
     max-width: 100%;
-    .team__intro{ 
-        h2 {
+    .team__intro{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+        align-items: center;
+        & > h2 {
             font-size: 34px;
             font-weight: 400;
             line-height: 36px;            
         }
-        .team__text {
+        & > p {            
             margin: 23px 0px 80px 0px;
-        }
-        p {
-            margin: auto;
             max-width: 789px;
             color:$site-gray-color;
             font-size: 16px;
@@ -355,11 +370,12 @@ $site-gray-color: rgba(160, 160, 160, 1);
     }   
     .team__items {
         margin: 0px 20px;
-        display: grid;          
+        display: grid;
         justify-content: space-around;      
         gap: 25px;
         max-width: 1365px;
-        .team__item {
+        & > img {
+            display: block;
             margin: auto;
             max-height: 273px;
             max-width: 204px;
@@ -369,10 +385,8 @@ $site-gray-color: rgba(160, 160, 160, 1);
         h2 {
             font-size: 34px;
             font-weight: 400;
-            line-height: 36px;            
-        }
-        .outro__title {
-            margin: 96px 0px 44px 0px;
+            line-height: 36px;  
+            margin: 96px 0px 44px 0px;          
         }
         p {
             font-size: 13px;
@@ -382,7 +396,8 @@ $site-gray-color: rgba(160, 160, 160, 1);
         }
     }
 }
-@media (max-width: 1920px) {
+
+@media (min-width: 1441px) {
     .team__items {
         grid-template-columns: repeat(6, 1fr);
     }
@@ -394,6 +409,9 @@ $site-gray-color: rgba(160, 160, 160, 1);
     }
 }
 @media (max-width: 1024px) {
+    .team {
+        margin-bottom: 60px;
+    }
     .team__items {
         grid-template-columns: repeat(12, 1fr);
         overflow: auto;
@@ -402,7 +420,7 @@ $site-gray-color: rgba(160, 160, 160, 1);
 
 
 .banner__6 {
-    width: 100%;
+    width: calc(100vw - 50px);
     .banner6__container{
         display: flex;
         margin:auto;
@@ -532,11 +550,21 @@ $site-gray-color: rgba(160, 160, 160, 1);
             text-align: right;
             height: 23px;
             margin: 80px 0px 20px 0px;
-            gap: 40px;            
+                        
             font-size: 13px;
             font-weight: 400;
             line-height: 15.23px;
             letter-spacing: 0.8px;
         }
+    }
+}
+@media (min-width: 1025px) {
+    .footer__copyright {
+        gap: 40px;
+    }
+}
+@media (max-width: 1024px) {
+    .footer__copyright {
+        gap: 20px
     }
 }
