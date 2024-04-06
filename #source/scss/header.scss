@@ -1,0 +1,43 @@
+.header {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: calc(100vw - 50px);    
+    .header__menu {        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; 
+        .header__list {                        
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: space-around;
+            max-width: 150px;
+        }
+        .header__link {             
+            text-transform: uppercase;
+            text-decoration: none; 
+            text-align: left;           
+            font-size: 14px;            
+            line-height: 16.41px;
+            letter-spacing: 1.4px;              
+        }
+        .cart__link {
+            min-width: 110px;
+        }
+        .burger {
+            display: none;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .header__link, .header__list {
+        display: none;        
+    }
+    .header__menu {
+        align-items: start;
+    }
+}

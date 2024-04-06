@@ -1,0 +1,30 @@
+.banner__2 {
+    margin: 80px;
+    height: 153px;
+    .banner__text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;    
+        justify-content: center;
+        height: 100%;
+        & > h2 {
+            font-size: 43px;
+            font-weight: 400;
+            line-height: 58px;        
+        }
+        & > h3 {
+            padding: 23px 0px 26px 0px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            color: $site-gray-color;
+        }
+        & > p {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 1.4px;
+        }
+    }
+}

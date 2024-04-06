@@ -1,0 +1,37 @@
+.banner__4 {
+    background-image: url("../img/home_office_inspiration.png");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;  
+    color: white;    
+    height: 504px;      
+    width: calc(100vw - 50px);  
+    margin: 120px 0px;
+    & > h2 {
+        font-size: 66px;
+        font-weight: 400;
+        line-height: 70px;
+    }
+    & > h3 {
+        padding: 14px 0px 30px 0px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        letter-spacing: 0.8px;
+    }
+    & > p {        
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15.23px;
+        letter-spacing: 1.4px;
+    }
+}
+@media (max-width: 1024px) {
+    .banner__4 {
+        margin: 40px 0px;
+        height: 400px;
+    }
+}
