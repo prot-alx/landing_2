@@ -92,9 +92,13 @@ ul {
   line-height: 16.41px;
   letter-spacing: 1.4px;
 }
-.header .header__menu .header__list a:hover {
+.header .header__menu .header__link:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+.header .header__menu .header__link:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .header .header__menu .cart__link {
   min-width: 110px;
@@ -130,7 +134,6 @@ ul {
   margin: auto;
   color: white;
   height: 504px;
-  width: calc(100vw - 50px);
 }
 .banner__1 .banner__text {
   display: -webkit-box;
@@ -165,6 +168,16 @@ ul {
   letter-spacing: 1.4px;
 }
 
+@media (min-width: 1441px) {
+  .banner__1, .header {
+    width: 1340px;
+  }
+}
+@media (max-width: 1440px) {
+  .banner__1, .header {
+    width: calc(100vw - 50px);
+  }
+}
 .banner__2 {
   margin: 80px;
   height: 153px;
@@ -414,6 +427,16 @@ ul {
     height: 400px;
   }
 }
+@media (min-width: 1441px) {
+  .banner__4 {
+    width: 1340px;
+  }
+}
+@media (max-width: 1440px) {
+  .banner__4 {
+    width: calc(100vw - 50px);
+  }
+}
 .banner__5 .banner5__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,6 +526,10 @@ ul {
   max-height: 273px;
   max-width: 204px;
 }
+.team .team__items > img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .team .team__outro > h2 {
   font-size: 34px;
   font-weight: 400;
@@ -576,6 +603,16 @@ ul {
   letter-spacing: 0.8px;
 }
 
+@media (min-width: 1441px) {
+  .banner__6 {
+    width: 1340px;
+  }
+}
+@media (max-width: 1440px) {
+  .banner__6 {
+    width: calc(100vw - 50px);
+  }
+}
 .footer {
   margin: 40px 20px 0px 20px;
   background-color: rgb(249, 249, 249);
@@ -653,6 +690,14 @@ ul {
   font-size: 22px;
   font-weight: 400;
   line-height: 24px;
+}
+.footer .footer__container .footer__main .footer__menu .footer__list > li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.footer .footer__container .footer__main .footer__menu .footer__list > li:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 .footer .footer__container .footer__main .footer__signup {
   max-width: 500px;

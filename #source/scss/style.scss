@@ -39,8 +39,11 @@ $site-gray-color: rgba(160, 160, 160, 1);
             line-height: 16.41px;
             letter-spacing: 1.4px;           
         }
-        .header__list a:hover {
+        .header__link:hover {
             transform: scale(1.2);
+        }
+        .header__link:active {
+            transform: scale(1.1);
         }
         .cart__link {
             min-width: 110px;
@@ -70,8 +73,7 @@ $site-gray-color: rgba(160, 160, 160, 1);
     justify-content: center;
     margin: auto;  
     color: white;    
-    height: 504px;    
-    width: calc(100vw - 50px);    
+    height: 504px;
     .banner__text {   
         display: flex;
         flex-direction: column;
@@ -96,6 +98,16 @@ $site-gray-color: rgba(160, 160, 160, 1);
             line-height: 15.23px;
             letter-spacing: 1.4px;    
         }
+    }
+}
+@media (min-width: 1441px) {
+    .banner__1, .header {
+        width: 1340px;
+    }
+}
+@media (max-width: 1440px) {
+    .banner__1, .header {
+        width: calc(100vw - 50px);
     }
 }
 
@@ -309,7 +321,16 @@ $site-gray-color: rgba(160, 160, 160, 1);
         height: 400px;
     }
 }
-
+@media (min-width: 1441px) {
+    .banner__4 {
+        width: 1340px;
+    }
+}
+@media (max-width: 1440px) {
+    .banner__4 {
+        width: calc(100vw - 50px);
+    }
+}
 
 .banner__5 {
     .banner5__container {
@@ -381,7 +402,10 @@ $site-gray-color: rgba(160, 160, 160, 1);
             max-height: 273px;
             max-width: 204px;
         }
-    }
+        & > img:hover {
+            transform: scale(1.1);
+        }
+    }   
     .team__outro {
         & > h2 {
             font-size: 34px;
@@ -446,7 +470,16 @@ $site-gray-color: rgba(160, 160, 160, 1);
         }
     }
 }
-
+@media (min-width: 1441px) {
+    .banner__6 {
+        width: 1340px;
+    }
+}
+@media (max-width: 1440px) {
+    .banner__6 {
+        width: calc(100vw - 50px);
+    }
+}
 
 .footer {
     margin: 40px 20px 0px 20px;    
@@ -490,7 +523,13 @@ $site-gray-color: rgba(160, 160, 160, 1);
                     text-align: left;                         
                     font-size: 22px;
                     font-weight: 400;
-                    line-height: 24px;                    
+                    line-height: 24px;    
+                    & > li:hover {
+                        transform: scale(1.05);
+                    }
+                    & > li:active  {
+                        transform: scale(0.95);
+                    }               
                 } 
             }
             .footer__signup {
