@@ -18,6 +18,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  max-width: 100%;
 }
 
 a {
@@ -30,23 +31,27 @@ ul {
   list-style: none;
 }
 
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  min-height: 100vh;
-  -ms-grid-columns: 1fr;
-      grid-template: minmax(76px, auto) 1fr minmax(70px, auto)/1fr;
-      grid-template-areas: "header" "main" "footer";
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 15px;
+  width: 100%;
 }
 .header .header__menu {
   display: -webkit-box;
@@ -74,7 +79,7 @@ ul {
 .header .header__menu .header__link {
   text-transform: uppercase;
   text-decoration: none;
-  text-align: right;
+  text-align: left;
   font-size: 14px;
   line-height: 16.41px;
   letter-spacing: 1.4px;
@@ -82,13 +87,20 @@ ul {
 .header .header__menu .cart__link {
   min-width: 110px;
 }
-
-.main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: main;
+.header .header__menu .burger {
+  display: none;
 }
 
+@media (max-width: 768px) {
+  .header__link, .header__list {
+    display: none;
+  }
+  .header__menu {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
 .banner__1 {
   background-image: url("../img/header/Rectangle.png");
   background-repeat: no-repeat;
@@ -179,6 +191,9 @@ ul {
   letter-spacing: 1.4px;
 }
 
+.banner__3 {
+  padding: 0px 20px;
+}
 .banner__3 .desktop__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,7 +201,6 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 25px;
 }
 .banner__3 .desktop__items .desktop__item {
   display: -webkit-box;
@@ -200,7 +214,6 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 575px;
 }
 .banner__3 .desktop__items .item__text h3 {
   font-size: 27px;
@@ -215,7 +228,28 @@ ul {
   letter-spacing: 1.4px;
   padding: 3px 0px;
 }
+.banner__3 .desktop__items img {
+  max-width: 100%;
+}
 
+@media (max-width: 1024px) {
+  .desktop__items {
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .desktop__items {
+    gap: 25px;
+  }
+  .item__text {
+    padding-top: 80px;
+  }
+}
 .featured__products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,6 +333,21 @@ ul {
   background: rgb(238, 238, 238);
 }
 
+@media (max-width: 1440px) {
+  .products__scroll {
+    max-width: 1005px;
+  }
+}
+@media (max-width: 1005px) {
+  .products__scroll {
+    max-width: 670px;
+  }
+}
+@media (max-width: 700px) {
+  .products__scroll {
+    max-width: 335px;
+  }
+}
 .banner__4 {
   background-image: url("../img/home_office_inspiration.png");
   background-repeat: no-repeat;
@@ -337,7 +386,7 @@ ul {
   letter-spacing: 1.4px;
 }
 
-.banner__5 {
+.banner__5 .banner5__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,22 +402,28 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.banner__5 .banner5__description {
+.banner__5 .banner5__container .banner5__description {
   max-width: 777px;
   margin: auto;
   padding: 23px 0px;
 }
-.banner__5 h2 {
+.banner__5 .banner5__container h2 {
   font-size: 34px;
   font-weight: 400;
   line-height: 36px;
 }
-.banner__5 p {
+.banner__5 .banner5__container p {
   color: rgb(160, 160, 160);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.8px;
+}
+.banner__5 .banner5__container .banner5__img {
+  padding: 0px 20px;
+}
+.banner__5 .banner5__container .banner5__img img {
+  max-width: 100%;
 }
 
 .team {
@@ -376,7 +431,8 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 42px 0px 120px 0px;
+  margin: 42px 20px 120px 20px;
+  max-width: 100%;
 }
 .team .team__intro h2 {
   font-size: 34px;
@@ -396,15 +452,16 @@ ul {
   letter-spacing: 0.8px;
 }
 .team .team__items {
+  margin: 0px 20px;
   display: -ms-grid;
   display: grid;
-  margin: auto;
-  -ms-grid-columns: 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr;
-  grid-template-columns: repeat(6, 1fr);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 25px;
   max-width: 1365px;
 }
 .team .team__items .team__item {
+  margin: auto;
   max-height: 273px;
   max-width: 204px;
 }
@@ -423,7 +480,30 @@ ul {
   letter-spacing: 1.4px;
 }
 
+@media (max-width: 1920px) {
+  .team__items {
+    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media (max-width: 1440px) {
+  .team__items {
+    -ms-grid-columns: (1fr)[8];
+    grid-template-columns: repeat(8, 1fr);
+    overflow: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .team__items {
+    -ms-grid-columns: (1fr)[12];
+    grid-template-columns: repeat(12, 1fr);
+    overflow: auto;
+  }
+}
 .banner__6 {
+  width: 100%;
+}
+.banner__6 .banner6__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,18 +519,17 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1340px;
   height: 404px;
   color: #ffffff;
   background-color: rgb(154, 168, 177);
 }
-.banner__6 h2 {
+.banner__6 .banner6__container h2 {
   font-size: 43px;
   font-weight: 400;
   line-height: 58px;
   margin: 23px 0px 24px 0px;
 }
-.banner__6 p {
+.banner__6 .banner6__container p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -458,10 +537,7 @@ ul {
 }
 
 .footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  margin-top: 40px;
+  margin: 40px 20px 0px 20px;
   background-color: rgb(249, 249, 249);
 }
 .footer .footer__container {
