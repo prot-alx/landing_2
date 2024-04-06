@@ -79,19 +79,19 @@ $site-gray-color: rgba(160, 160, 160, 1);
         text-align: center;    
         justify-content: center;
         height: 100%;
-        h2 {
+        & > h2 {
             font-size: 43px;
             font-weight: 400;
             line-height: 46px;
         }
-        h3 {
+        & > h3 {
             padding: 12px 0px 28px 0px;
             font-size: 15px;
             font-weight: 400;
             line-height: 17.58px;
             letter-spacing: 0.8px;
         }
-        p {
+        & > p {
             font-size: 13px;
             font-weight: 400;
             line-height: 15.23px;
@@ -109,12 +109,12 @@ $site-gray-color: rgba(160, 160, 160, 1);
         text-align: center;    
         justify-content: center;
         height: 100%;
-        h2 {
+        & > h2 {
             font-size: 43px;
             font-weight: 400;
             line-height: 58px;        
         }
-        h3 {
+        & > h3 {
             padding: 23px 0px 26px 0px;
             font-size: 14px;
             font-weight: 400;
@@ -122,7 +122,7 @@ $site-gray-color: rgba(160, 160, 160, 1);
             letter-spacing: 0.8px;
             color: $site-gray-color;
         }
-        p {
+        & > p {
             font-size: 13px;
             font-weight: 400;
             line-height: 21px;
@@ -141,7 +141,7 @@ $site-gray-color: rgba(160, 160, 160, 1);
             flex-direction: column;
             text-align: center;    
             justify-content: space-between; 
-            img {
+            & > img {
                 max-width: 100%;
                 display: block;
             }           
@@ -190,13 +190,13 @@ $site-gray-color: rgba(160, 160, 160, 1);
     justify-content: space-between;
     margin-top: 150px;
     height: 230px;
-    h2 {
+    & > h2 {
         font-size: 33px;
         font-weight: 400;
         line-height: 36px;
         padding-bottom: 16px;
     }
-    p {
+    & > p {
         font-size: 15px;
         font-weight: 400;
         line-height: 17.58px;
@@ -282,19 +282,19 @@ $site-gray-color: rgba(160, 160, 160, 1);
     height: 504px;      
     width: calc(100vw - 50px);  
     margin: 120px 0px;
-    h2 {
+    & > h2 {
         font-size: 66px;
         font-weight: 400;
         line-height: 70px;
     }
-    h3 {
+    & > h3 {
         padding: 14px 0px 30px 0px;
         font-size: 14px;
         font-weight: 400;
         line-height: 16.41px;
         letter-spacing: 0.8px;
     }
-    p {        
+    & > p {        
         font-size: 13px;
         font-weight: 400;
         line-height: 15.23px;
@@ -321,19 +321,19 @@ $site-gray-color: rgba(160, 160, 160, 1);
             margin: auto; 
             padding: 23px 15px;
         }
-        h2 {
+        & > h2 {
             font-size: 34px;
             font-weight: 400;
             line-height: 36px;
         }
-        p{            
+        & > p{            
             color: $site-gray-color;
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
             letter-spacing: 0.8px;
         }
-        img {
+        & > img {
             padding: 0px 20px;
             display: block;
             width: 100%;
@@ -382,13 +382,13 @@ $site-gray-color: rgba(160, 160, 160, 1);
         }
     }
     .team__outro {
-        h2 {
+        & > h2 {
             font-size: 34px;
             font-weight: 400;
             line-height: 36px;  
             margin: 96px 0px 44px 0px;          
         }
-        p {
+        & > p {
             font-size: 13px;
             font-weight: 400;
             line-height: 21px;
@@ -431,13 +431,13 @@ $site-gray-color: rgba(160, 160, 160, 1);
         height: 404px;
         color: #ffffff; 
         background-color: rgb(154, 168, 177, 1);
-        h2 {
+        & > h2 {
             font-size: 43px;
             font-weight: 400;
             line-height: 58px;
             margin: 23px 0px 24px 0px;
         }
-        p {  
+        & > p {  
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;
@@ -497,13 +497,13 @@ $site-gray-color: rgba(160, 160, 160, 1);
             .footer__signup {
                 max-width: 500px;
                 padding-left: 12.5px;
-                h3 {
+                & > h3 {
                     font-size: 22px;
                     font-weight: 400;
                     line-height: 24px;
                     text-align: left;
                 }
-                p {                    
+                & > p {                    
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 16.41px;
