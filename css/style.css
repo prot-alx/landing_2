@@ -84,13 +84,17 @@ ul {
       justify-content: space-around;
   max-width: 150px;
 }
-.header .header__menu .header__link {
+.header .header__menu .header__link a {
   text-transform: uppercase;
   text-decoration: none;
   text-align: left;
   font-size: 14px;
   line-height: 16.41px;
   letter-spacing: 1.4px;
+}
+.header .header__menu .header__list a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .header .header__menu .cart__link {
   min-width: 110px;
@@ -142,19 +146,19 @@ ul {
           justify-content: center;
   height: 100%;
 }
-.banner__1 .banner__text h2 {
+.banner__1 .banner__text > h2 {
   font-size: 43px;
   font-weight: 400;
   line-height: 46px;
 }
-.banner__1 .banner__text h3 {
+.banner__1 .banner__text > h3 {
   padding: 12px 0px 28px 0px;
   font-size: 15px;
   font-weight: 400;
   line-height: 17.58px;
   letter-spacing: 0.8px;
 }
-.banner__1 .banner__text p {
+.banner__1 .banner__text > p {
   font-size: 13px;
   font-weight: 400;
   line-height: 15.23px;
@@ -179,12 +183,12 @@ ul {
           justify-content: center;
   height: 100%;
 }
-.banner__2 .banner__text h2 {
+.banner__2 .banner__text > h2 {
   font-size: 43px;
   font-weight: 400;
   line-height: 58px;
 }
-.banner__2 .banner__text h3 {
+.banner__2 .banner__text > h3 {
   padding: 23px 0px 26px 0px;
   font-size: 14px;
   font-weight: 400;
@@ -192,7 +196,7 @@ ul {
   letter-spacing: 0.8px;
   color: rgb(160, 160, 160);
 }
-.banner__2 .banner__text p {
+.banner__2 .banner__text > p {
   font-size: 13px;
   font-weight: 400;
   line-height: 21px;
@@ -223,7 +227,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.banner__3 .desktop__items .desktop__item img {
+.banner__3 .desktop__items .desktop__item > img {
   max-width: 100%;
   display: block;
 }
@@ -277,13 +281,13 @@ ul {
   margin-top: 150px;
   height: 230px;
 }
-.featured__products h2 {
+.featured__products > h2 {
   font-size: 33px;
   font-weight: 400;
   line-height: 36px;
   padding-bottom: 16px;
 }
-.featured__products p {
+.featured__products > p {
   font-size: 15px;
   font-weight: 400;
   line-height: 17.58px;
@@ -385,19 +389,19 @@ ul {
   width: calc(100vw - 50px);
   margin: 120px 0px;
 }
-.banner__4 h2 {
+.banner__4 > h2 {
   font-size: 66px;
   font-weight: 400;
   line-height: 70px;
 }
-.banner__4 h3 {
+.banner__4 > h3 {
   padding: 14px 0px 30px 0px;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.41px;
   letter-spacing: 0.8px;
 }
-.banner__4 p {
+.banner__4 > p {
   font-size: 13px;
   font-weight: 400;
   line-height: 15.23px;
@@ -431,19 +435,19 @@ ul {
   margin: auto;
   padding: 23px 15px;
 }
-.banner__5 .banner5__container h2 {
+.banner__5 .banner5__container > h2 {
   font-size: 34px;
   font-weight: 400;
   line-height: 36px;
 }
-.banner__5 .banner5__container p {
+.banner__5 .banner5__container > p {
   color: rgb(160, 160, 160);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.8px;
 }
-.banner__5 .banner5__container img {
+.banner__5 .banner5__container > img {
   padding: 0px 20px;
   display: block;
   width: 100%;
@@ -499,13 +503,14 @@ ul {
   max-height: 273px;
   max-width: 204px;
 }
-.team .team__outro h2 {
+.team .team__outro > h2 {
   font-size: 34px;
   font-weight: 400;
   line-height: 36px;
   margin: 96px 0px 44px 0px;
+  padding: 0px 15px;
 }
-.team .team__outro p {
+.team .team__outro > p {
   font-size: 13px;
   font-weight: 400;
   line-height: 21px;
@@ -558,13 +563,13 @@ ul {
   color: #ffffff;
   background-color: rgb(154, 168, 177);
 }
-.banner__6 .banner6__container h2 {
+.banner__6 .banner6__container > h2 {
   font-size: 43px;
   font-weight: 400;
   line-height: 58px;
   margin: 23px 0px 24px 0px;
 }
-.banner__6 .banner6__container p {
+.banner__6 .banner6__container > p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -653,13 +658,13 @@ ul {
   max-width: 500px;
   padding-left: 12.5px;
 }
-.footer .footer__container .footer__main .footer__signup h3 {
+.footer .footer__container .footer__main .footer__signup > h3 {
   font-size: 22px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
 }
-.footer .footer__container .footer__main .footer__signup p {
+.footer .footer__container .footer__main .footer__signup > p {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.41px;
