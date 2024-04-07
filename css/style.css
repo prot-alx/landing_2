@@ -402,9 +402,9 @@ ul {
   letter-spacing: 0.7px;
 }
 .products__scroll .products__list .products__img {
+  display: block;
   width: 310px;
   height: 434px;
-  background: rgb(238, 238, 238);
 }
 
 @media (max-width: 1440px) {

@@ -305,9 +305,9 @@ $site-gray-color: rgba(160, 160, 160, 1);
             display: none;
         }*/
         .products__img {
+            display: block;
             width: 310px;
-            height: 434px;
-            background: rgb(238, 238, 238);
+            height: 434px;            
         }
     } 
 }
