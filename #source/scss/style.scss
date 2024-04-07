@@ -19,31 +19,33 @@ $site-gray-color: rgba(160, 160, 160, 1);
     padding: 15px;
     width: calc(100vw - 50px);
     .header__menu {
-        display: flex;        
-        width: 100%;
-        gap: 20px;
-        .header__link a{
-            display: block;            
-            text-transform: uppercase;
-            align-items: center;
-            text-decoration: none; 
-            text-align: center;           
-            font-size: 14px;            
-            line-height: 16.41px;
-            letter-spacing: 1.4px;           
+        width: 100%; 
+        .header__list {
+            display: flex;        
+            width: 100%;
+            gap: 20px;
+            .header__link a{
+                display: block;            
+                text-transform: uppercase;
+                align-items: center;
+                text-decoration: none; 
+                text-align: center;           
+                font-size: 14px;            
+                line-height: 16.41px;
+                letter-spacing: 1.4px;           
+            }
+            .header__link:hover {
+                transform: scale(1.2);
+            }
+            .header__link:active {
+                transform: scale(1.1);
+            }
+            .cart__link {
+                min-width: 110px;
+                margin-left: auto;
+            }            
         }
-        .header__link:hover {
-            transform: scale(1.2);
-        }
-        .header__link:active {
-            transform: scale(1.1);
-        }
-        .cart__link {
-            min-width: 110px;
-            margin-left: auto;
-        }
-        
-    }
+    }    
 }
 @media (min-width: 769px) {
     .header {
@@ -552,8 +554,6 @@ $site-gray-color: rgba(160, 160, 160, 1);
                 justify-content: center; 
                 align-items: center;
                 text-align: center;
-                width: 82px;
-                height: 82px;
                 background: black;
                 color: #ffffff;
                 font-size: 15px;
@@ -653,9 +653,17 @@ $site-gray-color: rgba(160, 160, 160, 1);
     .footer__copyright {
         gap: 40px;
     }
+    .footer__goup {
+        width: 82px;
+        height: 82px;
+    }
 }
 @media (max-width: 1024px) {
     .footer__copyright {
         gap: 20px
+    }
+    .footer__goup {
+        width: 62px;
+        height: 62px;
     }
 }
